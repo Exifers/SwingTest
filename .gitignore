@@ -1,0 +1,6 @@
+.*
+out/
+build/
+libs/
+src/test/
+src/main/ressources/
