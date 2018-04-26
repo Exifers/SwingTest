@@ -3,7 +3,6 @@ import java.awt.*;
 
 public class MyPanel extends JPanel {
     public static int i = 0;
-    private long previous;
 
     @Override
     public void paintComponent(Graphics g) {

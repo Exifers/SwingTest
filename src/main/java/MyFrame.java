@@ -6,6 +6,7 @@ public class MyFrame extends JFrame {
     private MyPanel panel;
 
     public MyFrame() {
+        setTitle("MyRPGMaker");
         setDefaultLookAndFeelDecorated(true);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         pack();
@@ -14,7 +15,16 @@ public class MyFrame extends JFrame {
 
         panel = new MyPanel();
         setContentPane(panel);
-        go();
+        //go();
+
+        JButton button = new JButton("Button");
+        Container pane = getContentPane();
+        GroupLayout gl = new GroupLayout(pane);
+        pane.setLayout(gl);
+        gl.setAutoCreateContainerGaps(true);
+        gl.setHorizontalGroup(gl.createSequentialGroup().addComponent(button));
+        gl.setVerticalGroup(gl.createSequentialGroup().addComponent(button));
+
     }
 
     private void go() {
@@ -26,7 +36,7 @@ public class MyFrame extends JFrame {
                 e.printStackTrace();
             }
             panel.repaint();
-            Toolkit.getDefaultToolkit().sync();
+            Toolkit.getDefaultToolkit().sync(); /* Is compulsory to have smooth animations */
         }
     }
 
