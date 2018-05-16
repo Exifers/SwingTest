@@ -1,5 +1,5 @@
-# MyRPGMaker
-Small copy of the famous RPGMaker, made with swing (java)
+# SwingTest
+made with swing (java)
 
 # Prerequisites
 - Java
